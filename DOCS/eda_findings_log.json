@@ -1,0 +1,110 @@
+{
+  "dataset_shape": {
+    "rows": 229781,
+    "columns": 45
+  },
+  "univariate": {
+    "age_mode_category": "60-64",
+    "bmi_mean": 28.69,
+    "bmi_median": 27.0,
+    "bmi_std": 6.79,
+    "menthlth_zero_days_pct": 66.42,
+    "physhlth_zero_days_pct": 59.57,
+    "condition_prevalence_pct": {
+      "High Blood Pressure": 45.44,
+      "High Cholesterol": 44.18,
+      "Smoker (100+ cigarettes lifetime)": 46.57,
+      "History of Stroke": 4.48,
+      "Difficulty Walking/Climbing Stairs": 18.55,
+      "Heavy Alcohol Consumption": 6.07,
+      "Diabetes or Prediabetes": 17.29
+    },
+    "heart_disease_prevalence_pct": 10.32,
+    "heart_disease_counts": {
+      "No": 206064,
+      "Yes": 23717
+    }
+  },
+  "bivariate": {
+    "condition_rates_by_disease_status": [
+      {
+        "Condition": "High Blood Pressure",
+        "Heart Disease": "No",
+        "Percentage": 42.04
+      },
+      {
+        "Condition": "High Blood Pressure",
+        "Heart Disease": "Yes",
+        "Percentage": 74.98
+      },
+      {
+        "Condition": "High Cholesterol",
+        "Heart Disease": "No",
+        "Percentage": 41.21
+      },
+      {
+        "Condition": "High Cholesterol",
+        "Heart Disease": "Yes",
+        "Percentage": 69.98
+      }
+    ],
+    "bmi_median_no_disease": 27.0,
+    "bmi_median_with_disease": 28.0,
+    "correlation_with_heart_disease": {
+      "GenHlth": 0.246,
+      "Age": 0.224,
+      "DiffWalk": 0.203,
+      "HighBP": 0.201,
+      "Stroke": 0.199,
+      "HighChol": 0.176,
+      "Diabetes": 0.171,
+      "PhysHlth": 0.17,
+      "Smoker": 0.105,
+      "MentHlth": 0.053,
+      "BMI": 0.04,
+      "PhysActivity": -0.073
+    },
+    "strongest_positive_correlate": "GenHlth",
+    "strongest_positive_correlate_value": 0.246,
+    "prevalence_by_age": {
+      "18-24": 0.53,
+      "25-29": 0.76,
+      "30-34": 1.26,
+      "35-39": 1.58,
+      "40-44": 2.5,
+      "45-49": 4.11,
+      "50-54": 6.15,
+      "55-59": 8.23,
+      "60-64": 11.25,
+      "65-69": 14.18,
+      "70-74": 17.68,
+      "75-79": 19.98,
+      "80+": 24.55
+    },
+    "prevalence_by_sex": {
+      "Female": 7.91,
+      "Male": 13.41
+    },
+    "prevalence_by_education": {
+      "Never attended / Kindergarten": 16.67,
+      "Grades 1-8 (Elementary)": 19.26,
+      "Grades 9-11 (Some High School)": 17.08,
+      "Grade 12 / GED (High School Grad)": 12.18,
+      "College 1-3 yrs (Some College / Tech)": 10.36,
+      "College 4+ yrs (College Grad)": 7.86
+    },
+    "prevalence_by_comorbidity_count": {
+      "0": 1.48,
+      "1": 3.77,
+      "2": 9.47,
+      "3": 17.8,
+      "4": 27.57,
+      "5": 41.31,
+      "6": 60.99
+    },
+    "high_risk_cohort_size": 45327,
+    "high_risk_cohort_prevalence_pct": 26.82,
+    "baseline_prevalence_pct": 10.32,
+    "high_risk_multiplier": 2.6
+  }
+}
